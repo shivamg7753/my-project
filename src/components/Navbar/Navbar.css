@@ -1,0 +1,86 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #f4f4f4;
+  position: relative;
+  z-index: 10; /* Ensure navbar is above other content */
+}
+
+.navbar-btn {
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.navbar-icon {
+  margin-right: 8px;
+}
+
+.navbar-icon-right {
+  margin-left: 8px;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 10px; /* Adjust this value to align with the button */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20; /* Ensure dropdown is above other content */
+}
+
+/* Dropdown Menu Sections */
+.dropdown-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.dropdown-select {
+  width: 130px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-menu {
+    width: 100%; /* Make dropdown full-width on small screens */
+    left: 0;
+    right: 0; /* Ensure it aligns with the navbar */
+  }
+
+  .navbar-btn {
+    width: 100%; /* Make button full-width on small screens */
+    justify-content: center; /* Center button text on small screens */
+  }
+}
